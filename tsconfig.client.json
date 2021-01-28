@@ -1,0 +1,21 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": [
+    "src/server",
+  ],
+  // "include": [
+  //   // only client
+  //   "src/client",
+  //   "src/common",
+  // ],
+  "compilerOptions": {
+    // "incremental": true,                 /* Enable incremental compilation */
+    "target": "es5",
+    "module": "es6",                     /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */
+    // "tsBuildInfoFile": "./dist/client.buildinfo",               /* Specify file to store incremental compilation information */
+    // // "outDir": null,
+    // // "declaration": true,                   /* Generates corresponding '.d.ts' file. */
+    // // "declarationMap": true,                /* Generates a sourcemap for each corresponding '.d.ts' file. */
+    // // "sourceMap": true,                     /* Generates corresponding '.map' file. */
+  },
+}

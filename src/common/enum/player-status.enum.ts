@@ -1,0 +1,6 @@
+export enum PLAYER_STATUS {
+  ACTIVE = 1,
+  AWAY = 2,
+  DISCONNECTED = 3,
+  NOT_JOINED = 4,
+}

@@ -1,0 +1,42 @@
+.main {
+  //
+}
+
+// .main {
+//   .board {
+//     display: grid;
+//     // grid-template-columns: repeat(7, 1fr); // repeat(auto-fill, minmax(8rem, 1fr));
+//     grid-auto-rows: 1fr;
+
+//     &::before {
+//       content: '';
+//       width: 0;
+//       // square
+//       padding-bottom: 100%;
+//       grid-row: 1 / 1;
+//       grid-column: 1 / 1;
+//     }
+
+//     > *:first-child {
+//       grid-row: 1 / 1;
+//       grid-column: 1 / 1;
+//     }
+
+//     > * {
+//       background: rgba(0, 0, 0, 0.1);
+//       border: 1px solid white;
+//     }
+//   }
+// }
+
+// .cell {
+//   position: relative;
+// }
+
+// .player {
+//   width: 100%;
+//   height: 100%;
+//   border-radius: 50%;
+//   &.one { background-color: var(--player-one); }
+//   &.two { background-color: var(--player-two); }
+// }

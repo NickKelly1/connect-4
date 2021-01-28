@@ -1,0 +1,6 @@
+export enum GAME_STATE {
+  NOT_STARTED = 1,
+  PLAYER_ONE_TURN = 2,
+  PLAYER_TWO_TURN = 3,
+  FINISHED = 4,
+};
