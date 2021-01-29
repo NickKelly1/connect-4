@@ -5,7 +5,7 @@ import { IModalState } from '../../hooks/use-modal.hook';
 
 const defaultStyle: ReactModal.Styles = {
   overlay: {
-    backgroundColor: 'rgba(0, 0, 0, 0.75)',
+    backgroundColor: 'var(--bg-overlay)',
   },
   content: {
     top: '50%',
@@ -16,8 +16,8 @@ const defaultStyle: ReactModal.Styles = {
     height: 'auto',
     width: 'auto',
     padding: 'var(--spacing-3)',
-    backgroundColor: 'var(--modal-bg-color)',
-    border: '1px solid var(--main-color)',
+    backgroundColor: 'var(--bg-secondary)',
+    border: '1px solid var(--primary)',
   },
 };
 

@@ -7,6 +7,7 @@ import { Util } from '../../../common/fn/util.fn';
 import { IMatchDto } from '../../../common/interface/match-dto.interface';
 import { Message } from '../../../server/message';
 import { useBroadcast, WsCtx } from '../../contexts/ws/ws.context';
+import { MatchLobby } from '../match-lobby/match-lobby';
 import { Match } from '../match/match';
 
 interface IMatchContainerProps {
@@ -48,6 +49,7 @@ export function MatchContainer(props: IMatchContainerProps) {
   }, [setMatchState]);
 
 
+  // TODO: loading spinner...
   if (!matchState) return (
     <div>
       Loading...
@@ -56,6 +58,6 @@ export function MatchContainer(props: IMatchContainerProps) {
   //
 
   return (
-    <Match match={matchState} />
+    <MatchLobby match={matchState} />
   );
 }

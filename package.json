@@ -10,6 +10,7 @@
     "deep-object-diff": "^1.1.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "faker": "^5.2.0",
     "immer": "^8.0.1",
     "morgan": "^1.10.0",
     "nanoid": "^3.1.20",
@@ -68,7 +69,7 @@
     "server:build:production": "webpack --progress --mode production",
     "server:dev:serve:inspect": "nodemon --inspect -w dist/server --delay 1-second dist/server/server/server.js",
     "server:dev:serve": "nodemon -w dist/server --delay 1-second dist/server/server/server.js",
-    "server:start": "node server/server.js",
+    "server:start": "node dist/server/server/server.js",
     "server:dev": "concurrently --kill-others --names \"BUILD,SERVE\" -c \"bgBlue.bold,bgMagenta.bold\"  \"npm run server:build:watch\" \"npm run server:dev:serve\"",
     "dev": "concurrently --kill-others --names \"CLIENT:BUILD,SERVER:BUILD,SERVER:SERVE\" -c \"bgYellow.bold,bgBlue.bold,bgMagenta.bold\" \"npm run client:build:watch\" \"npm run server:build:watch\" \"npm run server:dev:serve\"",
     "dev:inspect": "concurrently --kill-others --names \"CLIENT:BUILD,SERVER:BUILD,SERVER:INSPECT\" -c \"bgYellow.bold,bgBlue.bold,bgMagenta.bold\" \"npm run client:build:watch\" \"npm run server:build:watch\" \"npm run server:dev:serve:inspect\""

@@ -1,0 +1,65 @@
+$spacing-1: 4px;
+$spacing-2: 8px;
+$spacing-3: 16px;
+
+$font-stack: Helvetica, sans-serif;
+
+$xxl: 1400px;
+$xl:  1200px;
+$lg:  992px;
+$md:  768px;
+$sm:  576px;
+$xs:  0px;
+
+
+// primary
+$primary: #ffc1e3;
+$primary-light: #f48fb1;
+$primary-dark: #bf5f82;
+
+
+// secondary
+$secondary: #64b5f6;
+$secondary-light: #9be7ff;
+$secondary-dark: #2286c3;
+
+$text-body: rgb(255, 255, 255);
+$text-primary: rgb(255, 255, 255);
+$text-secondary: rgb(255, 255, 255);
+
+$player-one: red;
+$player-two: cyan;
+
+$bg-primary: rgb(24, 26, 27);
+$bg-secondary: rgb(28, 30, 31);
+
+$bg-overlay: rgba(0, 0, 0, 0.75);
+
+
+:root {
+  --bg-overlay: #{$bg-overlay};
+
+  --bg-primary: #{$bg-primary};
+  --bg-secondary: #{$bg-secondary};
+
+  // https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=F48FB1&secondary.color=64B5F6
+  --primary: #{$primary};
+  --primary-light: #{$primary-light};
+  --primary-dark: #{$primary-dark};
+
+  // secondary
+  --secondary: #{$secondary};
+  --secondary-light: #{$secondary-light};
+  --secondary-dark: #{$secondary-dark};
+
+  --text-body: #{$text-body};
+  --text-primary: #{$text-primary};
+  --text-secondary: #{$text-secondary};
+
+  --player-one: #{$player-one};
+  --player-two: #{$player-two};
+
+  --spacing-1: #{$spacing-1};
+  --spacing-2: #{$spacing-2};
+  --spacing-3: #{$spacing-3};
+}

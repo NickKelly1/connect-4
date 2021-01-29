@@ -13,6 +13,7 @@ import { ICreateGameDto } from '../../../common/http/create-game-dto.interface';
 import { Util } from '../../../common/fn/util.fn';
 import { BrowserRouter, Switch, Route, useLocation, useHistory, } from 'react-router-dom';
 import { MatchContainer } from '../match-container/match-container';
+import { Button } from '../button/button';
 
 interface IMainProps {
   //
@@ -49,7 +50,12 @@ export function Main(props: IMainProps): JSX.Element {
   const modalState = useModalState(true);
 
   return (
-    <main className="main">
+    <main className="main container-lg">
+      <header className="text-center">
+        <h1>
+          Connect 4
+        </h1>
+      </header>
       {/* no match - show create match modal... */}
       <Switch>
         <Route path="/games/:game_id" render={({ match }) => (
@@ -58,10 +64,12 @@ export function Main(props: IMainProps): JSX.Element {
         </Route>
         <Route path="/">
           <Modal state={modalState}>
-            <h1>Welcome</h1>
-            <button onClick={() => createGameState.mutate()}>
-              Create a game?
-            </button>
+            <div className="centered flex-col p-3">
+              <h1>Welcome</h1>
+              <Button onClick={() => createGameState.mutate()}>
+                Create a game
+              </Button>
+            </div>
           </Modal>
         </Route>
       </Switch>

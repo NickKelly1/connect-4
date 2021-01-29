@@ -1,5 +1,5 @@
 import { DependencyList, EffectCallback, useEffect, useRef } from "react";
-import { useIsMounted } from "./use-is-mounted.hook";
+import { useHasMounted } from "./use-has-mounted.hook";
 
 /**
  * Use effect, after initial mount
@@ -8,6 +8,6 @@ import { useIsMounted } from "./use-is-mounted.hook";
  * @param deps
  */
 export function useUpdate(effect: EffectCallback, deps?: DependencyList) {
-  const isMounted = useIsMounted();
-  useEffect(() => { if (isMounted) return effect(); }, deps);
+  const hasMounted = useHasMounted();
+  useEffect(() => { if (hasMounted) return effect(); }, deps);
 }

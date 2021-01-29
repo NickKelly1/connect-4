@@ -64,12 +64,13 @@ export function Match(props: IMatchProps) {
     <div className="match">
       <Modal state={modalState}>
         Awaiting worthy opponent...
+        {/* share... */}
       </Modal>
       <div className="centered flex-col">
         <div>{`${match.game.board.cols} x ${match.game.board.rows}`}</div>
         <div>{GAME_STATE[match.game.state]}</div>
 
-        <div className="d-flex justify-between">
+        <section className="d-flex justify-between">
           <div className="d-flex justify-start mr-3">
             <span>{match.game.player_one ?? '_'}</span>
             {(match.you === PLAYER.ONE) && (<span>&nbsp;(You)</span>)}
@@ -83,10 +84,10 @@ export function Match(props: IMatchProps) {
             {(match.you === PLAYER.TWO) && (<span>&nbsp;(You)</span>)}
             {!(match.you === PLAYER.ONE) && (<span>{PLAYER_STATUS[match.game.player_two_status]}</span>)}
           </div>
-        </div>
+        </section>
 
       </div>
-      <div className="centered flex-col">
+      <section className="centered flex-col">
         <div
           className="board m-3"
           style={{ gridTemplateColumns: `repeat(${match.game.board.cols}, 1fr)`, }}
@@ -105,7 +106,7 @@ export function Match(props: IMatchProps) {
             );
           })}
         </div>
-      </div>
+      </section>
     </div>
   );
 }

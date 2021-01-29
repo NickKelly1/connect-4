@@ -19,26 +19,6 @@ setLogger(console);
 
 ReactModal.setAppElement('#app');
 
-
-// ReactModal.defaultStyles = {
-//   overlay: {
-//     position: 'relative',
-//     backgroundColor: 'rgba(0, 0, 0, 0.75)',
-//   },
-//   content: {
-//     top: '50%',
-//     left: '50%',
-//     right: 'auto',
-//     bottom: 'auto',
-//     transform: 'translate(-50%, -50%)',
-//     height: 'auto',
-//     width: 'auto',
-//     padding: 'var(--spacing-3)',
-//     backgroundColor: 'var(--modal-bg-color)',
-//     border: '1px solid var(--main-color)',
-//   },
-// };
-
 const client = new QueryClient();
 
 ReactDOM.render(

@@ -12,7 +12,6 @@ import { IMessage } from '../common/interface/message.interface';
 import { IObservable } from '../common/interface/observable.interface';
 import { IServerState } from '../common/interface/server-state.interface';
 import { Broadcast } from './broadcast';
-import { Sutil } from './server-util.fn';
 import { Ws } from './ws.fn';
 import { GamePolicy } from './game.policy';
 
